@@ -38,26 +38,28 @@ const Services = () => {
   return (
     <motion.section
       id="services"
-      className="py-16 px-4"
+      className="py-16 px-4 bg-black"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-2xl font-bold mb-8 text-center">Services</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-cyan-400">Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="bg-white dark:bg-[#2a2a2a] p-6 rounded-xl shadow hover:shadow-md transition"
+            className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition text-gray-100"
             whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
           >
-            <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <h3 className="text-lg font-semibold mb-2 text-white">
+              {service.title}
+            </h3>
+            <p className="text-sm text-gray-300">
               {service.description}
             </p>
           </motion.div>

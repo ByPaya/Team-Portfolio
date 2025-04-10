@@ -65,23 +65,23 @@ const Projects = () => {
       viewport={{ once: true }}
       variants={containerVariants}
     >
-      <h2 className="text-2xl font-bold mb-8 text-center">Projects</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-cyan-400">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projectData.map((project, index) => (
           <motion.div
             key={index}
             variants={cardVariants}
             whileHover={{ scale: 1.05, rotate: 1 }}
-            className="bg-white dark:bg-[#2a2a2a] text-gray-800 dark:text-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition"
+            className="bg-gray-800 text-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition"
           >
-            <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mb-2 italic">{project.tech}</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
+            <h3 className="text-xl font-semibold mb-1 text-white">{project.title}</h3>
+            <p className="text-xs text-gray-400 mb-2 italic">{project.tech}</p>
+            <p className="text-sm text-gray-300 mb-4">{project.description}</p>
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 text-sm underline"
+              className="text-cyan-400 text-sm underline hover:text-cyan-500"
             >
               View Project
             </a>
