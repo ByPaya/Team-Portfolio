@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Services from "./Services";
 import Projects from "./Projects";
 import About from "./About";
-import { motion } from "framer-motion";
+
 import Clients from "./Clints"; // Fixed typo
 import Skills from "./Skills";
 import Testimonial from "./Testimonial";
@@ -23,14 +23,14 @@ export default function Portfolio() {
   }, [darkMode]);
 
   return (
-    <motion.div
+    <div
       className="min-h-screen bg-black text-gray-800 dark:text-gray-100 font-sans transition-colors duration-500"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       {/* Navbar */}
-      <motion.div
+      <div
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -39,10 +39,10 @@ export default function Portfolio() {
           darkMode={darkMode}
           toggleDarkMode={() => setDarkMode(!darkMode)}
         />
-      </motion.div>
+      </div>
 
       {/* Hero Section */}
-      <motion.section
+      <section
         className="text-center py-20 px-4"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function Portfolio() {
           A full-stack developer crafting modern web apps, mobile solutions, and
           scalable backend systems for innovative businesses.
         </p>
-      </motion.section>
+      </section>
 
       {/* Reusable Sections */}
       <Projects />
@@ -65,6 +65,6 @@ export default function Portfolio() {
       <Skills />
       <Testimonial/>
       <Contact/>
-    </motion.div>
+    </div>
   );
 }

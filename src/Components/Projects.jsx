@@ -7,13 +7,13 @@ const Projects = () => {
       title: "MERN E-commerce Platform",
       description: "A fully functional e-commerce platform with user authentication, cart, and Stripe payments using MERN stack.",
       tech: "MERN Stack",
-      link: "https://mernstore.example.com",
+      link: "https://github.com/AnupMoyal/ecommerce-products-data",
     },
     {
-      title: "Social Media App",
-      description: "A real-time social platform built with MERN, featuring likes, comments, and messaging.",
-      tech: "MERN Stack",
-      link: "https://socialconnect.example.com",
+      title: "Restaurant Recommender System​",
+      description: "AI-based restaurant recommender using machine learning and Flask to suggest eateries based on location and cuisine.",
+      tech: "Python, Pandas, Machine Learning, Flask",
+      link: "https://github.com/TUSHAR-KHARE/Restaurant-recommender-system.git",
     },
     {
       title: "Fitness Tracker App",
