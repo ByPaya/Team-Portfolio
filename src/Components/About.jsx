@@ -5,7 +5,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="py-16 px-4 bg-black"
+      className="py-16 px-4"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -13,7 +13,7 @@ const About = () => {
     >
       <h2 className="text-2xl font-bold mb-8 text-center">About Me</h2>
       <motion.div
-        className="max-w-3xl mx-auto text-center text-white-300 leading-relaxed"
+        className="max-w-3xl mx-auto text-center text-gray-700 dark:text-gray-300 leading-relaxed"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

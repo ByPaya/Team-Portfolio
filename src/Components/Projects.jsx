@@ -72,16 +72,16 @@ const Projects = () => {
             key={index}
             variants={cardVariants}
             whileHover={{ scale: 1.05, rotate: 1 }}
-            className="bg-black p-6 rounded-xl shadow hover:shadow-lg transition"
+            className="bg-white dark:bg-[#2a2a2a] text-gray-800 dark:text-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition"
           >
             <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-            <p className="text-xs text-gray-500 mb-2 italic">{project.tech}</p>
-            <p className="text-sm text-gray-700 mb-4">{project.description}</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mb-2 italic">{project.tech}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 text-sm underline"
+              className="text-blue-600 dark:text-blue-400 text-sm underline"
             >
               View Project
             </a>

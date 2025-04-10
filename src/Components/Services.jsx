@@ -38,7 +38,7 @@ const Services = () => {
   return (
     <motion.section
       id="services"
-      className="py-16 px-4 bg-[#f3f0e7] dark:bg-[#1e1e1e]"
+      className="py-16 px-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -57,7 +57,9 @@ const Services = () => {
             transition={{ duration: 0.4, delay: index * 0.1 }}
           >
             <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{service.description}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">
+              {service.description}
+            </p>
           </motion.div>
         ))}
       </div>

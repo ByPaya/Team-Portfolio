@@ -5,8 +5,9 @@ import Services from "./Services";
 import Projects from "./Projects";
 import About from "./About";
 import { motion } from "framer-motion";
-import Clients from "./Clints";
+import Clints from "./Clints"; // Fixed typo from Clints
 import Skills from "./Skills";
+import Clients from "./Clints";
 
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(false);
@@ -54,21 +55,15 @@ export default function Portfolio() {
         </p>
       </motion.section>
 
+      {/* Reusable Components */}
       <Projects />
       <Services />
       <About />
-
-      {/* Clients Section */}
       <Clients />
-
-      {/* Skills Section */}
       <Skills />
 
       {/* Testimonials Section */}
-      <section
-        id="testimonials"
-        className="py-16 px-4 bg-[#f3f0e7] dark:bg-[#1e1e1e]"
-      >
+      <section id="testimonials" className="py-16 px-4">
         <h2 className="text-2xl font-bold mb-8 text-center">Testimonials</h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <motion.div
@@ -114,7 +109,7 @@ export default function Portfolio() {
       {/* Contact Section */}
       <motion.section
         id="contact"
-        className="py-16 px-4 bg-[#f3f0e7] dark:bg-[#1e1e1e] text-center"
+        className="py-16 px-4 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -123,7 +118,6 @@ export default function Portfolio() {
         <h2 className="text-2xl font-bold mb-4">Work With Me</h2>
         <p className="mb-6">Ready to bring your idea to life? Let's connect.</p>
 
-        {/* ✅ FIXED mailto link here */}
         <a
           href="mailto:payalkewat917@gmail.com"
           target="_blank"
