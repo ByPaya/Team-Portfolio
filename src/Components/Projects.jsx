@@ -25,7 +25,7 @@ const Projects = () => {
       title: "Online Learning App",
       description: "E-learning app with video courses, quizzes, and progress tracking developed in Flutter.",
       tech: "App Development",
-      link: "https://edulearnapp.example.com",
+      link: "https://github.com/ByPaya/BrainAcademy-.git",
     },
     {
       title: "Employee Management System",
