@@ -40,7 +40,7 @@ const Contact = () => {
                         <FaLinkedin />
                     </a>
                     <a
-                        href="https://github.com/AnupMoyal"
+                        href="https://github.com/ByPaya"
                         className="hover:text-white"
                         target="_blank"
                         rel="noopener noreferrer"
